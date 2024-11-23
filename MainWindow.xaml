@@ -1,0 +1,15 @@
+﻿<Window x:Class="TwitterApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TwitterApp" Height="400" Width="400">
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBlock Text="認証コードを入力してください:" Margin="0,10" />
+            <TextBox Name="CodeInputBox" Width="300" />
+            <Button Content="アクセストークンを取得" Width="200" Margin="0,10" Click="OnGetAccessTokenClick" />
+            <TextBlock Text="ツイート内容を入力してください:" Margin="0,20" />
+            <TextBox Name="TweetInputBox" Width="300" />
+            <Button Content="ツイートを投稿" Width="200" Margin="0,10" Click="OnPostTweetClick" />
+        </StackPanel>
+    </Grid>
+</Window>
